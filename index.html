@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Memory Visualizer</title>
+    <link rel="stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Memory Visualizer</h1>
+            </header>
+            
+            <div class="top-section">
+                <div class="history">
+                    <h2>History</h2>
+                    <div class="history-content">
+                        <!-- History items will appear here -->
+                    </div>
+                </div>
+                
+                <div class="actions"> 
+                    <h2>Actions</h2>
+                    <button class="actions-btn">Add character to stack</button>
+                    <button class="actions-btn">Add integer to stack</button>
+                    <button class="actions-btn">Add character array to stack</button>
+                    <button class="actions-btn">Add character pointer to heap</button>
+                    <button class="actions-btn">Add integer pointer to heap</button>
+                    <button class="actions-btn">Add character array to heap</button>
+                </div>
+            </div>
+            
+            <div class="memory-section">
+                <div class="stack">
+                    <h2>Stack</h2>
+                    <div class="stack-content">
+                        <!-- Stack memory blocks will appear here -->
+                    </div>
+                </div>
+                
+                <div class="heap">
+                    <h2>Heap</h2>
+                    <div class="heap-content">
+                        <!-- Heap memory blocks will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

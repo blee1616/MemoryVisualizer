@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Top section with history and actions */
+.top-section {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.history {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    min-height: 200px;
+}
+
+.history-content {
+    height: 180px;
+    overflow-y: auto;
+}
+
+.history-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.actions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.actions-btn {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions-btn:hover {
+    background-color: #45a049;
+}
+
+/* Memory section with stack and heap */
+.memory-section {
+    display: flex;
+    gap: 20px;
+}
+
+.stack, .heap {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 300px;
+}
+
+.stack {
+    background-color: #e8f5e9; /* Light green for stack */
+}
+
+.heap {
+    background-color: #e3f2fd; /* Light blue for heap */
+}
+
+.stack-content, .heap-content {
+    height: 270px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Memory block styling */
+.memory-block {
+    border: 2px solid #333;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 0.85rem;
+    max-width: 80%;
+    min-width: 120px;
+}
+
+.stack-block {
+    background-color: #c8e6c9;
+    border-color: #4CAF50;
+}
+
+.heap-block {
+    background-color: #bbdefb;
+    border-color: #2196F3;
+}
+
+.variable-name {
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.type {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    color: #555;
+}
+
+.value {
+    font-family: monospace;
+    padding: 2px 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+    font-size: 0.8rem;
+}
+
+/* Pointer styling */
+.pointer {
+    position: relative;
+    margin-top: 3px;
+    padding-left: 15px;
+    font-size: 0.75rem;
+    color: #d32f2f;
+}
+
+.pointer:before {
+    content: "→";
+    position: absolute;
+    left: 2px;
+    color: #f44336;
+    font-weight: bold;
+}
+
+.pointer-line {
+    position: absolute;
+    border-left: 2px dashed #f44336;
+    height: 100%;
+    left: 5px;
+    top: 50%;
+}
