@@ -33,10 +33,11 @@ Observe memory allocation:
 ```bash
 # Clone the repository
 git clone https://github.com/blee1616/MemoryVisualizer.git
+```
 Open index.html in a web browser
 Click the action buttons to add different types of variables to memory
 Observe how the memory visualization updates
-```
+
 ## Future Enhancements
 Memory deallocation (free/delete operations)
 Memory leak visualization
